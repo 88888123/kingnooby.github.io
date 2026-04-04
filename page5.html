@@ -38,6 +38,33 @@
             box-shadow: 0 0 15px #0099ff88;
         }
 
+        /* SUBSCRIBE BUTTON */
+        .subscribe-box {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .subscribe-btn {
+            margin-top: 10px;
+            padding: 14px 28px;
+            background: linear-gradient(90deg, #0099ff, #33ccff);
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: 0.25s ease;
+            box-shadow: 0 0 20px #00aaff88;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .subscribe-btn:hover {
+            background: linear-gradient(90deg, #33ccff, #66d9ff);
+            box-shadow: 0 0 35px #33ccffaa;
+            transform: translateY(-3px);
+        }
+
         .back-btn {
             margin-top: 40px;
         }
@@ -70,6 +97,13 @@
 
     </section>
 
+    <!-- SUBSCRIBE BUTTON -->
+    <div class="subscribe-box">
+        <a href="https://www.youtube.com/@KingNoobyTown" target="_blank" class="subscribe-btn">
+            🔔 Subscribe
+        </a>
+    </div>
+
     <button class="back-btn" onclick="window.location.href='index.html'">Back to Home</button>
 
     <footer style="
@@ -85,10 +119,4 @@
 
     <script src="script.js"></script>
 </body>
-    <div class="subscribe-box">
-    <a href="https://www.youtube.com/@YOURCHANNEL" target="_blank" class="subscribe-btn">
-        🔔 Subscribe
-    </a>
-</div>
-
 </html>
