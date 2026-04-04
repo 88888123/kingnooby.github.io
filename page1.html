@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KingNooby Updates</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .updates-container {
+            max-width: 900px;
+            margin: 40px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .update-box {
+            background: rgba(20, 20, 30, 0.55);
+            padding: 25px;
+            border-radius: 16px;
+            border: 1px solid rgba(0, 170, 255, 0.4);
+            box-shadow: 0 0 25px rgba(0, 170, 255, 0.25);
+            backdrop-filter: blur(12px);
+            transition: 0.3s ease;
+        }
+
+        .update-box:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 0 40px #00aaffaa;
+            border-color: #33ccff;
+        }
+
+        .update-title {
+            font-size: 1.4rem;
+            margin-bottom: 6px;
+            text-shadow: 0 0 10px #00aaff;
+        }
+
+        .update-time {
+            font-size: 0.95rem;
+            color: #66d9ff;
+            margin-bottom: 12px;
+        }
+
+        .update-text {
+            line-height: 1.5;
+            opacity: 0.9;
+        }
+
+        .back-btn {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="title">Latest Updates</h1>
+        <p class="tagline">News from the KingNooby Team</p>
+    </header>
+
+    <section class="updates-container">
+
+        <!-- REAL UPDATE -->
+        <div class="update-box">
+            <h2 class="update-title">New Discord Server Launched!</h2>
+            <p class="update-time">Posted on April 4, 2026 at 13:26</p>
+            <p class="update-text">
+                We’ve officially launched our brand‑new Discord server!  
+                Join the community, chat with the team, get updates, and be part of the KingNooby world.  
+                <br><br>
+                <strong>Join here:</strong> https://dsc.gg/kingnooby
+            </p>
+        </div>
+
+        <!-- FABRICATED NEWS #1 -->
+        <div class="update-box">
+            <h2 class="update-title">Website Carousel Update</h2>
+            <p class="update-time">Posted on April 3, 2026 at 19:42</p>
+            <p class="update-text">
+                The video carousel on our site has been upgraded with smoother transitions,  
+                neon‑blue glow effects, and improved mobile support.  
+                Thanks to everyone who tested it and gave feedback!
+            </p>
+        </div>
+
+        <!-- FABRICATED NEWS #2 -->
+        <div class="update-box">
+            <h2 class="update-title">Team Page Added</h2>
+            <p class="update-time">Posted on April 2, 2026 at 16:10</p>
+            <p class="update-text">
+                A brand‑new team page is now live!  
+                Meet KingNooby, Iaer, and Tominoxx — the people behind the project.  
+                Each member now has their own glowing profile card.
+            </p>
+        </div>
+
+        <!-- FABRICATED NEWS #3 -->
+        <div class="update-box">
+            <h2 class="update-title">New Homepage Animations</h2>
+            <p class="update-time">Posted on April 1, 2026 at 11:03</p>
+            <p class="update-text">
+                The homepage received a visual upgrade with smoother fade‑ins,  
+                glowing buttons, and improved layout spacing.  
+                The site now feels more alive and polished.
+            </p>
+        </div>
+
+    </section>
+
+    <button class="back-btn" onclick="window.location.href='index.html'">Back to Home</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<footer style="
+    margin-top: 60px;
+    text-align: center;
+    opacity: 0.6;
+    color: #66d9ff;
+    font-size: 0.75rem;
+    text-shadow: 0 0 6px #0099ff;
+">
+    Website design by Laer
+</footer>
+

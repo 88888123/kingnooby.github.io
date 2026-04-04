@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KingNooby Team</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .team-container {
+            max-width: 1100px;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .team-box {
+            background: rgba(20, 20, 30, 0.55);
+            padding: 25px;
+            border-radius: 16px;
+            border: 1px solid rgba(0, 170, 255, 0.4);
+            box-shadow: 0 0 25px rgba(0, 170, 255, 0.25);
+            backdrop-filter: blur(12px);
+            transition: 0.3s ease;
+        }
+
+        .team-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 45px #00aaffaa;
+            border-color: #33ccff;
+        }
+
+        .team-box h2 {
+            margin-bottom: 5px;
+            text-shadow: 0 0 10px #00aaff;
+        }
+
+        .team-role {
+            font-size: 1.1rem;
+            color: #66d9ff;
+            margin-bottom: 12px;
+        }
+
+        .team-bio {
+            line-height: 1.5;
+            opacity: 0.9;
+        }
+
+        .back-btn {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="title">Meet the Team</h1>
+        <p class="tagline">The people behind KingNooby</p>
+    </header>
+
+    <section class="team-container">
+
+        <!-- KINGNOOBY -->
+        <div class="team-box">
+            <h2>KingNooby</h2>
+            <p class="team-role">Owner • YouTuber</p>
+            <p class="team-bio">
+                The creator and driving force behind the KingNooby brand.  
+                Known for creativity, energy, and a passion for building unique content,  
+                KingNooby leads the channel, the community, and the vision behind every project.
+            </p>
+        </div>
+
+        <!-- IAER -->
+        <div class="team-box">
+            <h2>Iaer</h2>
+            <p class="team-role">Co‑Owner • Website Designer • Helper</p>
+            <p class="team-bio">
+                A core part of the team, Iaer brings structure, design sense,  
+                and technical support. From layout ideas to behind‑the‑scenes help,  
+                Iaer keeps the project running smoothly and professionally.
+            </p>
+        </div>
+
+        <!-- TORNINOXX -->
+        <div class="team-box">
+            <h2>Tominoxx</h2>
+            <p class="team-role">Co‑Owner • Giveaway Helper</p>
+            <p class="team-bio">
+                The community‑focused member of the team.  
+                Tominoxx helps organize giveaways, support events,  
+                and keep the community active and engaged with positive energy.
+            </p>
+        </div>
+
+    </section>
+
+    <button class="back-btn" onclick="window.location.href='index.html'">Back to Home</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<footer style="
+    margin-top: 60px;
+    text-align: center;
+    opacity: 0.6;
+    color: #66d9ff;
+    font-size: 0.75rem;
+    text-shadow: 0 0 6px #0099ff;
+">
+    Website design by Laer
+</footer>

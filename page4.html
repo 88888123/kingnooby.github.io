@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini‑Games</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .games-container {
+            max-width: 1100px;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .game-box {
+            background: rgba(15, 15, 25, 0.6);
+            padding: 25px;
+            border-radius: 16px;
+            border: 1px solid rgba(0, 170, 255, 0.4);
+            box-shadow: 0 0 25px rgba(0, 170, 255, 0.25);
+            backdrop-filter: blur(12px);
+            transition: 0.3s ease;
+            text-align: center;
+        }
+
+        .game-box:hover {
+            transform: translateY(-10px) scale(1.03);
+            box-shadow: 0 0 45px #00aaffaa;
+            border-color: #33ccff;
+        }
+
+        .game-box h2 {
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px #00aaff;
+        }
+
+        .game-result {
+            margin-top: 15px;
+            font-size: 1.1rem;
+            color: #66d9ff;
+            min-height: 40px;
+        }
+
+        .game-btn {
+            margin-top: 15px;
+            padding: 12px 22px;
+            background: linear-gradient(90deg, #0099ff, #33ccff);
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: 0.25s ease;
+            box-shadow: 0 0 20px #00aaff88;
+        }
+
+        .game-btn:hover {
+            background: linear-gradient(90deg, #33ccff, #66d9ff);
+            box-shadow: 0 0 35px #33ccffaa;
+            transform: translateY(-3px);
+        }
+
+        .back-btn {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="title">Mini‑Games</h1>
+        <p class="tagline">Fun extras for the KingNooby community</p>
+    </header>
+
+    <section class="games-container">
+
+        <!-- GAME 1: Spin the Wheel -->
+        <div class="game-box">
+            <h2>🎡 Spin the Wheel</h2>
+            <p>Try your luck and get a random reward!</p>
+            <button class="game-btn" onclick="spinWheel()">Spin</button>
+            <div class="game-result" id="wheelResult"></div>
+        </div>
+
+        <!-- GAME 2: Random Challenge -->
+        <div class="game-box">
+            <h2>🔥 Random Challenge</h2>
+            <p>Get a fun mission to try in Poxel.io!</p>
+            <button class="game-btn" onclick="randomChallenge()">Generate</button>
+            <div class="game-result" id="challengeResult"></div>
+        </div>
+
+        <!-- GAME 3: Random Loadout -->
+        <div class="game-box">
+            <h2>🔫 Random Loadout</h2>
+            <p>Get a crazy FPS loadout to try!</p>
+            <button class="game-btn" onclick="randomLoadout()">Generate</button>
+            <div class="game-result" id="loadoutResult"></div>
+        </div>
+
+    </section>
+
+    <button class="back-btn" onclick="window.location.href='index.html'">Back to Home</button>
+
+    <script src="script.js"></script>
+
+    <script>
+        function spinWheel() {
+            const rewards = [
+                "⭐ 50 XP",
+                "💎 Rare Skin",
+                "🎁 Mystery Box",
+                "🔥 Double Damage (5 min)",
+                "⚡ Speed Boost",
+                "😢 Nothing... try again!"
+            ];
+            document.getElementById("wheelResult").innerText =
+                rewards[Math.floor(Math.random() * rewards.length)];
+        }
+
+        function randomChallenge() {
+            const challenges = [
+                "Get 10 headshots",
+                "Win 2 matches in a row",
+                "Play a full match with only pistol",
+                "Get 5 melee kills",
+                "Win a match with 0 deaths",
+                "Deal 1000 total damage"
+            ];
+            document.getElementById("challengeResult").innerText =
+                challenges[Math.floor(Math.random() * challenges.length)];
+        }
+
+        function randomLoadout() {
+            const primaries = ["Assault Rifle", "Shotgun", "Sniper", "SMG", "Burst Rifle"];
+            const secondaries = ["Pistol", "Revolver", "Knife", "Dual Pistols"];
+            const perks = ["Speed Boost", "Extra Ammo", "Shield Regen", "Silent Steps"];
+
+            const loadout =
+                primaries[Math.floor(Math.random() * primaries.length)] + " + " +
+                secondaries[Math.floor(Math.random() * secondaries.length)] +
+                " | Perk: " +
+                perks[Math.floor(Math.random() * perks.length)];
+
+            document.getElementById("loadoutResult").innerText = loadout;
+        }
+    </script>
+
+</body>
+</html>
+<footer style="
+    margin-top: 60px;
+    text-align: center;
+    opacity: 0.6;
+    color: #66d9ff;
+    font-size: 0.75rem;
+    text-shadow: 0 0 6px #0099ff;
+">
+    Website design by Laer
+</footer>
+

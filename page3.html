@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poxel.io Zone</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .poxel-container {
+            max-width: 1100px;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .poxel-box {
+            background: rgba(15, 15, 25, 0.6);
+            padding: 25px;
+            border-radius: 16px;
+            border: 1px solid rgba(0, 170, 255, 0.4);
+            box-shadow: 0 0 25px rgba(0, 170, 255, 0.25);
+            backdrop-filter: blur(12px);
+            transition: 0.3s ease;
+            text-align: center;
+        }
+
+        .poxel-box:hover {
+            transform: translateY(-10px) scale(1.03);
+            box-shadow: 0 0 45px #00aaffaa;
+            border-color: #33ccff;
+        }
+
+        .poxel-box h2 {
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px #00aaff;
+        }
+
+        .poxel-box p {
+            opacity: 0.9;
+            line-height: 1.5;
+        }
+
+        .play-btn {
+            margin-top: 15px;
+            padding: 12px 22px;
+            background: linear-gradient(90deg, #0099ff, #33ccff);
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: 0.25s ease;
+            box-shadow: 0 0 20px #00aaff88;
+        }
+
+        .play-btn:hover {
+            background: linear-gradient(90deg, #33ccff, #66d9ff);
+            box-shadow: 0 0 35px #33ccffaa;
+            transform: translateY(-3px);
+        }
+
+        .back-btn {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="title">Poxel.io Zone</h1>
+        <p class="tagline">Your FPS Playground</p>
+    </header>
+
+    <section class="poxel-container">
+
+        <!-- BOX 1: Loadouts -->
+        <div class="poxel-box">
+            <h2>⚔ Loadouts</h2>
+            <p>
+                Customize your weapons, skins, and gear.  
+                Build the perfect setup for dominating the arena.
+            </p>
+            <button class="play-btn" onclick="window.open('https://poxel.io', '_blank')">
+                Open Poxel.io
+            </button>
+        </div>
+
+        <!-- BOX 2: Stats -->
+        <div class="poxel-box">
+            <h2>📊 Player Stats</h2>
+            <p>
+                Track your kills, wins, accuracy, and match history.  
+                See how you stack up against other players.
+            </p>
+            <button class="play-btn" onclick="window.open('https://poxel.io', '_blank')">
+                View Stats
+            </button>
+        </div>
+
+        <!-- BOX 3: Fun Challenges -->
+        <div class="poxel-box">
+            <h2>🔥 Daily Challenges</h2>
+            <p>
+                Complete fun missions like “Get 20 headshots”  
+                or “Win 3 matches in a row” to earn bragging rights.
+            </p>
+            <button class="play-btn" onclick="window.open('https://poxel.io', '_blank')">
+                Start Challenge
+            </button>
+        </div>
+
+    </section>
+
+    <button class="back-btn" onclick="window.location.href='index.html'">Back to Home</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<footer style="
+    margin-top: 60px;
+    text-align: center;
+    opacity: 0.6;
+    color: #66d9ff;
+    font-size: 0.75rem;
+    text-shadow: 0 0 6px #0099ff;
+">
+    Website design by Laer
+</footer>
