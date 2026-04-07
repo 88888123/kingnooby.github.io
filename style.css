@@ -272,4 +272,19 @@ footer {
     text-shadow: 0 0 6px #0099ff;
 }
 
+.info-box {
+    margin: 0 auto 30px auto;
+    max-width: 600px;
+    padding: 14px 20px;
+    background: rgba(10, 25, 45, 0.55);
+    border: 1px solid rgba(80, 150, 255, 0.45);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    color: #9fdcff;
+    font-size: 1rem;
+    text-shadow: 0 0 8px #0077cc;
+    box-shadow: 0 0 20px rgba(0, 150, 255, 0.25);
+}
+
+
 
