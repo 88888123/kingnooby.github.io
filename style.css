@@ -316,4 +316,21 @@ footer {
     transform: translateY(-4px);
 }
 
+.discord-link {
+    font-size: 1.1rem;
+    color: #b8e7ff;
+    margin-top: 20px;
+}
+
+.discord-link a {
+    color: #4acbff;
+    text-decoration: underline;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.discord-link a:hover {
+    color: #66d9ff;
+    text-shadow: 0 0 8px #33ccff;
+}
 
