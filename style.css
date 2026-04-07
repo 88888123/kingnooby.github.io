@@ -167,3 +167,109 @@ button:hover {
     box-shadow: 0 0 25px #33ccffaa;
 }
 
+/* GENERAL PAGE STYLE */
+body {
+    background: #050a12;
+    color: white;
+    font-family: "Segoe UI", sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin-top: 40px;
+}
+
+.title {
+    font-size: 2.6rem;
+    color: #4acbff;
+    text-shadow: 0 0 18px #009dff;
+}
+
+.tagline {
+    opacity: 0.75;
+    margin-bottom: 40px;
+    color: #9fdcff;
+}
+
+/* GRID: ALWAYS 3 PER ROW */
+.scripts-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+/* BEAUTIFUL NEON SQUARES */
+.script-card {
+    background: rgba(10, 25, 45, 0.55);
+    padding: 22px;
+    border-radius: 14px;
+    border: 1px solid rgba(80, 150, 255, 0.45);
+    box-shadow: 0 0 25px rgba(0, 170, 255, 0.25);
+    backdrop-filter: blur(12px);
+    transition: 0.25s ease;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.script-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 0 45px #00aaffaa;
+    border-color: #4acbff;
+}
+
+/* INSTALL BUTTON */
+.install-btn {
+    padding: 10px 18px;
+    background: linear-gradient(90deg, #0099ff, #33ccff);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.25s ease;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 0 20px #00aaff88;
+}
+
+.install-btn:hover {
+    background: linear-gradient(90deg, #33ccff, #66d9ff);
+    box-shadow: 0 0 35px #33ccffaa;
+    transform: translateY(-3px);
+}
+
+/* BACK BUTTON */
+.back-btn {
+    margin-top: 40px;
+    padding: 12px 22px;
+    background: #0d1622;
+    border: 1px solid #0099ff;
+    border-radius: 10px;
+    color: #66d9ff;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.back-btn:hover {
+    background: #0b121c;
+    box-shadow: 0 0 20px #0099ff88;
+    transform: translateY(-3px);
+}
+
+/* FOOTER */
+footer {
+    margin-top: 60px;
+    text-align: center;
+    opacity: 0.6;
+    color: #66d9ff;
+    font-size: 0.75rem;
+    text-shadow: 0 0 6px #0099ff;
+}
+
+
