@@ -286,5 +286,34 @@ footer {
     box-shadow: 0 0 20px rgba(0, 150, 255, 0.25);
 }
 
+.discord-box {
+    margin: 60px auto;
+    max-width: 600px;
+    padding: 30px;
+    background: rgba(10, 25, 45, 0.55);
+    border: 1px solid rgba(80, 150, 255, 0.45);
+    border-radius: 16px;
+    backdrop-filter: blur(14px);
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0, 150, 255, 0.25);
+}
+
+.discord-btn {
+    display: inline-block;
+    padding: 16px 28px;
+    background: linear-gradient(90deg, #0099ff, #33ccff);
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    text-decoration: none;
+    box-shadow: 0 0 25px #00aaff88;
+    transition: 0.25s ease;
+}
+
+.discord-btn:hover {
+    background: linear-gradient(90deg, #33ccff, #66d9ff);
+    box-shadow: 0 0 40px #33ccffaa;
+    transform: translateY(-4px);
+}
 
 
